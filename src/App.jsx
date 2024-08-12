@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   const APP_ID = "db8e1a82"
-  const APP_KEY = "6bd3d0fc113a1315248e31421006a0c9—"
+  const APP_KEY = "57a1ec3456eebb20c976d59e2e468958"
 
   const [recipes, setRecipes] = useState([]); // the recipes are stored in an array
   const [search, setSearch] = useState(""); // by default the search query is nothing
@@ -69,6 +69,7 @@ function App() {
 
       {/* this section will iterate through the recipes array and display the recipe's data */}
       <div className="bg-white text-black">
+      <p className="m-3 h-1/3 p-5">Text goes here</p>
         {recipes.map((recipe) =>(
           <Recipe
               key={recipe.recipe.label}
